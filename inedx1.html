@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prem Satya Sai | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#6366F1,#8B5CF6);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+
+    animation:fadeIn 1.5s;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.1rem;
+}
+
+/* Navigation */
+
+nav{
+    background:#111827;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8B5CF6;
+}
+
+/* Sections */
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* About */
+
+.about{
+    text-align:center;
+}
+
+/* Education */
+
+.education-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+/* Skills */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:white;
+    text-align:center;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+}
+
+/* Projects */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+.project h3{
+    margin-bottom:10px;
+}
+
+/* Contact */
+
+form{
+    max-width:600px;
+    margin:auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    background:#6366F1;
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    cursor:pointer;
+
+    border-radius:6px;
+}
+
+button:hover{
+    background:#4F46E5;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    align-items:center;
+}
+
+header h1{
+    font-size:2rem;
+}
+
+section{
+    padding:50px 5%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Prem Satya Sai</h1>
+
+<p>
+Computer Science Engineer |
+Web Developer |
+AI Enthusiast
+</p>
+
+</header>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#education">Education</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+
+I am a Computer Science Engineer passionate about
+Web Development, Artificial Intelligence,
+Software Engineering and Product Design.
+
+I enjoy building modern web applications
+and solving real-world problems through technology.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+
+<article class="education-card">
+
+<h3>Bachelor of Technology (Computer Science Engineering)</h3>
+
+<p>
+Pursuing B.Tech in Computer Science Engineering.
+</p>
+
+</article>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">HTML5</div>
+
+<div class="skill">CSS3</div>
+
+<div class="skill">JavaScript</div>
+
+<div class="skill">Git</div>
+
+<div class="skill">GitHub</div>
+
+<div class="skill">Python</div>
+
+<div class="skill">Java</div>
+
+<div class="skill">MySQL</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects-grid">
+
+<article class="project">
+
+<h3>AI Product Description Generator</h3>
+
+<p>
+Generates professional e-commerce
+product descriptions using AI.
+</p>
+
+</article>
+
+<article class="project">
+
+<h3>Career Guidance Platform</h3>
+
+<p>
+AI-powered platform helping students
+explore career opportunities.
+</p>
+
+</article>
+
+<article class="project">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+Responsive portfolio website built
+using HTML, CSS and JavaScript.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Your Email"
+required>
+
+<textarea
+id="message"
+rows="5"
+placeholder="Your Message"
+required></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Prem Satya Sai.
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let email =
+document.getElementById("email").value;
+
+if(!email.includes("@")){
+
+alert("Please enter a valid email");
+
+return;
+
+}
+
+alert(
+"Form Submitted Successfully!"
+);
+
+});
+
+</script>
+
+</body>
+</html>
